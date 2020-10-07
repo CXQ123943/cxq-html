@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>菜单控件</title>
+    <style type="text/css">
+        hr {
+            background: red;
+            height: 5PX;
+        }
+    </style>
+</head>
+<body>
+
+<label>
+    <select>
+        <optgroup label="水果类">
+            <option value="1">香蕉</option>
+            <option value="2">草莓</option>
+        </optgroup>
+    </select>
+</label>
+<hr/>
+
+<label>
+    <span>学历</span>
+    <select name="xl" autofocus="autofocus">
+        <option value="1">硕士</option>
+        <option value="2">大学</option>
+        <option value="3" selected="selected">大专</option>
+        <option value="4">高中</option>
+        <option value="5" disabled="disabled">中专</option>
+    </select>
+</label>
+<hr/>
+
+<label>
+    <span>学历</span>
+    <select name="xl" size="3" multiple="multiple">
+        <option value="1">硕士</option>
+        <option value="2">大学</option>
+        <option value="3" selected="selected">大专</option>
+        <option value="4">高中</option>
+        <option value="5">中专</option>
+    </select>
+</label>
+<hr/>
+
+<fieldset>
+    <legend>学历统计</legend>
+    <label>
+        <span>学历</span>
+        <select name="xl" form="select-test">
+            <option value="1">硕士</option>
+            <option value="2">大学</option>
+            <option value="3">大专</option>
+            <option value="4">高中</option>
+            <option value="5">中专</option>
+        </select>
+    </label>
+
+    <form id="select-test" action="#" method="get">
+        <button>select-test</button>
+    </form>
+</fieldset>
+</body>
+</html>
